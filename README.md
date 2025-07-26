@@ -21,6 +21,24 @@ A simple Maven-based Java EE web application that allows users to add and view s
 - ✅ Maven (Build Automation)
 - ✅ JDBC (Database Connectivity)
 
+CREATE DATABASE student_db;
+
+USE student_db;
+
+CREATE TABLE students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    branch VARCHAR(100),
+    marks INT,
+    grade VARCHAR(2)
+);
+
+
+String url = "jdbc:mysql://localhost:3306/student_db";
+String user = "root";
+String password = "yourpassword";
+
+
 ---
 
 ## 🛠️ Setup Instructions
